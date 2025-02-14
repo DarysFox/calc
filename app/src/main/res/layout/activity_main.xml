@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#A69FFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⋆˚࿔💜Lumpy Space Calc💜⋆˚࿔"
+        android:textSize="27sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:paddingBottom="16dp" />
+
+    <EditText
+        android:id="@+id/inputA"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:hint=" First number: "
+        android:paddingLeft="5dp"
+        android:inputType="numberDecimal"
+        android:background="#664FA3">
+
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+
+
+    <EditText
+        android:id="@+id/inputB"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint=" Second number: "
+        android:paddingLeft="5dp"
+        android:inputType="numberDecimal"
+        android:background="#664FA3" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/themeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎨 Change theme"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result: "
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:paddingTop="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingBottom="15dp">
+
+        <Button android:id="@+id/addButton"
+            android:text="+"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/subButton"
+            android:text="-"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/mulButton"
+            android:text="x"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/divButton"
+            android:text="/"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/modButton"
+            android:text="%"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/powButton"
+            android:text="^"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/sqrtButton"
+            android:text="√"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+        <Button
+            android:id="@+id/factButton"
+            android:text="!"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/themeImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/adtime" />
+</LinearLayout>
