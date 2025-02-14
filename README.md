@@ -1,1 +1,1 @@
-Cuet kalkulacka
+Cute kalkulacka
